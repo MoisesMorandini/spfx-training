@@ -21,7 +21,8 @@ export default class ListItemsGenericWebPart extends BaseClientSideWebPart<IList
     const element: React.ReactElement<IListItemsGenericProps> = React.createElement(
       ListItemsGeneric,
       {
-        description: this.properties.description
+        description: this.properties.description,
+        spcontext: this.context
       }
     );
 

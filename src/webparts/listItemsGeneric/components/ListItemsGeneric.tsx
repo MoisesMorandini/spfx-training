@@ -6,19 +6,8 @@ import { escape } from '@microsoft/sp-lodash-subset';
 export default class ListItemsGeneric extends React.Component<IListItemsGenericProps, {}> {
   public render(): React.ReactElement<IListItemsGenericProps> {
     return (
-      <div className={ styles.listItemsGeneric }>
-        <div className={ styles.container }>
-          <div className={ styles.row }>
-            <div className={ styles.column }>
-              <span className={ styles.title }>Welcome to SharePoint!</span>
-              <p className={ styles.subTitle }>Customize SharePoint experiences using Web Parts.</p>
-              <p className={ styles.description }>{escape(this.props.description)}</p>
-              <a href="https://aka.ms/spfx" className={ styles.button }>
-                <span className={ styles.label }>Learn more</span>
-              </a>
-            </div>
-          </div>
-        </div>
+      <div className={styles.listItemsGeneric}>
+        <h1>Hello World</h1>
       </div>
     );
   }

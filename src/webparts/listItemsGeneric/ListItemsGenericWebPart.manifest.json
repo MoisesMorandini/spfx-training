@@ -3,25 +3,28 @@
   "id": "b75a6572-b9d9-4c2d-a621-8b2da402e89f",
   "alias": "ListItemsGenericWebPart",
   "componentType": "WebPart",
-
-  // The "*" signifies that the version should be taken from the package.json
   "version": "*",
   "manifestVersion": 2,
-
-  // If true, the component can only be installed on sites where Custom Script is allowed.
-  // Components that allow authors to embed arbitrary script code should set this to true.
-  // https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f
   "requiresCustomScript": false,
-  "supportedHosts": ["SharePointWebPart"],
-
-  "preconfiguredEntries": [{
-    "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
-    "group": { "default": "Other" },
-    "title": { "default": "ListItemsGeneric" },
-    "description": { "default": "ListItemsGeneric description" },
-    "officeFabricIconFontName": "Page",
-    "properties": {
-      "description": "ListItemsGeneric"
+  "supportedHosts": [
+    "SharePointWebPart"
+  ],
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": {
+        "default": "Other"
+      },
+      "title": {
+        "default": "ListItemsGeneric"
+      },
+      "description": {
+        "default": "ListItemsGeneric description"
+      },
+      "officeFabricIconFontName": "Page",
+      "properties": {
+        "description": "ListItemsGeneric"
+      }
     }
-  }]
+  ]
 }
