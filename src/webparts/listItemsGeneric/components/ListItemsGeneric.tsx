@@ -47,7 +47,7 @@ export default function ListItemsGeneric({ sharepointListId, spcontext }: IListI
             <table>
               <tr>
                 {
-                  listFields.map(field => { return <th>{field.InternalName}</th> })
+                  listFields.map(field => { return <th>{field.Title}</th> })
                 }
               </tr>
 
@@ -57,7 +57,7 @@ export default function ListItemsGeneric({ sharepointListId, spcontext }: IListI
                     <tr>
                       {
                         listFields.map(field => {
-                          return <td> {item[field.Title]}</td>
+                          return <td> {item[field.InternalName]}</td>
                         })
                       }
                     </tr>

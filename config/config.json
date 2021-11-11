@@ -9,10 +9,19 @@
           "manifest": "./src/webparts/listItemsGeneric/ListItemsGenericWebPart.manifest.json"
         }
       ]
+    },
+    "employee-form-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/employeeForm/EmployeeFormWebPart.js",
+          "manifest": "./src/webparts/employeeForm/EmployeeFormWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "ListItemsGenericWebPartStrings": "lib/webparts/listItemsGeneric/loc/{locale}.js"
+    "ListItemsGenericWebPartStrings": "lib/webparts/listItemsGeneric/loc/{locale}.js",
+    "EmployeeFormWebPartStrings": "lib/webparts/employeeForm/loc/{locale}.js"
   }
 }
